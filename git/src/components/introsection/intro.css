@@ -102,12 +102,13 @@
   
 }
 
-@media screen and (max-width:450px) {
-  .profile_details h2{
+@media screen and (max-width: 450px) {
+  .profile_details h2 {
     font-size: 18px;
     margin: 0px;
   }
-  .profile_details h6{
+  .profile_details h6 {
     margin-top: 20px;
   }
 }
+
