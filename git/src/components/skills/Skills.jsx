@@ -11,7 +11,7 @@ const Skills = () => {
             I'm currently looking to join a{" "}
             <span className="primary_color_text">cross-functional</span> team
           </h6>
-          <p>that values improving people's lives through accessible design</p>
+          <p>that values improving people's lives through accessible development</p>
         </div>
         <div className="skill_image">
             <img src={IMAGES.skillImage} alt="skillImage" />
