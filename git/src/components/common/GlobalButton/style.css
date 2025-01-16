@@ -1,0 +1,9 @@
+.global_button{
+    font-size: 13px;
+    padding: 10px 20px;
+    background-color: #2C1250;
+    border: 1px solid #693B93;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}

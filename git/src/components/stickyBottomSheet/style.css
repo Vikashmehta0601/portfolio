@@ -1,0 +1,125 @@
+/* CustomBottomSheet.css */
+.custom-bottom-sheet-container {
+  position: relative;
+  overflow: hidden;
+  background-color: #f5f5f5;
+}
+
+/* Menu Button */
+.menu-button {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(45deg, #2c12508f, #5f38df);
+  backdrop-filter: blur(4px);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10;
+  font-weight: 300;
+  transition: background-color 0.3s ease;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.menu-button.active {
+  background-color: #ff6347;
+}
+
+/* Bottom Sheet */
+.bottom-sheet {
+  position: fixed;
+  bottom: -300px;
+  left: 0;
+  right: 0;
+  height: 300px;
+  background-color: white;
+  box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.2);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  transition: 0.4s ease-in-out;
+  z-index: 5;
+}
+.close_sheet {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: #5f38df;
+  color: #fff;
+  border-radius: 50%;
+  border: none;
+  font-size: 21px;
+  padding-bottom: 4px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.bottom-sheet.open {
+  transform: translateY(0px);
+  bottom: 50px;
+}
+
+.sheet-content {
+  padding: 20px;
+}
+
+.sheet-content h3 {
+  margin-top: 0;
+  color: #5f38df;
+  margin-bottom: 10px;
+}
+.sheet-content img {
+  width: 100%;
+  height: 200px;
+  border-radius: 15px;
+}
+
+.close-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.custom_bottomSheet ul {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.custom_bottomSheet ul li {
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease-in;
+  color: #dedede;
+}
+
+.resume_download {
+  display: flex;
+  align-items: center;
+}
+
+.resume_download img {
+  width: 40px;
+  height: auto;
+  margin-left: 20px;
+  background: beige;
+}
+
+@media screen and (min-width: 767px) {
+  .bottom-sheet,
+  .menu-button {
+    max-width: 400px;
+    margin: 0px auto;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 0px #fff;
+  }
+}

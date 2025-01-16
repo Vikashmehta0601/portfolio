@@ -1,0 +1,10 @@
+.heading_primary h1{
+    font-size: 40px;
+    font-weight: 500;
+    line-height: normal;
+}
+@media screen and (max-width:767px) {
+    .heading_primary h1{
+        font-size: 26px;
+    }
+}

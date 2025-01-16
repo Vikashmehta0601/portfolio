@@ -1,0 +1,86 @@
+.ProjectLeftCard{
+    padding: 10px;
+}
+.ProjectLeftCard .heading_top p {
+    color: #9857D3;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.ProjectLeftCard .heading_top h2{
+    color: #CCD6F6;
+    font-size: 34px;
+    line-height:normal;
+}
+
+.ProjectLeftCard .glance_card{
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    background: radial-gradient(circle, #693b9345 100%, #6ebff44d 22%, #4690d47d 0%);
+    border-radius: 15px;
+    margin: 40px 0px 30px;
+}
+
+/* right card css in this  */
+
+
+.ProjectRightCard{
+    background-color: #2B0B3A;
+    padding: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+.ProjectRightCard img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.visit_Section{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+    background: #00000060;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in;
+}
+
+.ProjectRightCard:hover .visit_Section{
+    opacity: 1;
+    transition: all 0.3s ease-in;
+
+}
+
+@media screen and (max-width:767px) {
+    .ProjectLeftCard .heading_top p{
+        font-size: 14px;
+    }
+    .ProjectLeftCard .heading_top h2{
+        font-size: 24px;
+    }
+    .ProjectLeftCard .glance_card{
+        margin: 10px 0px 20px;
+        font-size: 14px;
+    }
+    .ProjectRightCard .visit_Section{
+        opacity: 1;
+        backdrop-filter: blur(2px);
+        background: #0000000d;
+        /* width: 140px;
+        height: 50px;
+        background: transparent;
+        backdrop-filter: blur(0px);
+        right: initial;
+        bottom: initial;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%); */
+    }
+}

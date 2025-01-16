@@ -1,0 +1,103 @@
+.intro {
+  padding: 70px 0px 50px;
+}
+
+.intro .profile_img {
+  position: relative;
+}
+.intro .container {
+  display: flex;
+  align-items: center;
+}
+.profile_img h1 {
+  position: absolute;
+  font-size: 19px;
+  font-weight: 500;
+  right: -182px;
+  top: 22px;
+}
+
+.profile_details h6{
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.profile_details h2 {
+    font-size: 50px;
+    max-width: 500px;
+    line-height: 60px;
+    font-weight: 500;
+}
+
+.profile_details p{
+    font-size: 11px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+/* more details css starts from here  */
+.more_details{
+    padding-left: 130px;
+    padding-top: 30px;
+}
+
+.more_details h2{
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 500;
+}
+.more_details h6{
+    font-size: 21px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+.more_details h6:nth-child(2){
+  margin-top: 60px;
+}
+.more_details img{
+    max-width: 50px;
+    margin-left: 10px;
+}
+
+@media screen and (max-width:767px) {
+  .intro{
+    padding: 40px 0px 30px;
+  }
+  .intro .profile_img{
+    max-width: 150px;
+  }
+  .intro .profile_img img{
+    width: 100%;
+  }
+  .profile_img h1{
+    font-size: 14px;
+    right: -162px;
+    top: 0px;
+  }
+  .profile_details h6{
+    font-size: 13px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+  .profile_details h2{
+    font-size: 22px;
+    line-height: 28px;
+    margin: 10px 0px;
+  }
+  .more_details{
+    padding-left: 0px;
+  }
+  .more_details h2{
+    font-size: 24px;
+  }
+  .more_details h6{
+    font-size: 15px;
+    margin-bottom: 15px;
+    font-weight: 400;
+  }
+  .more_details h6:nth-child(2) {
+    margin-top: 20px;
+}
+  
+}

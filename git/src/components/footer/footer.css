@@ -1,0 +1,32 @@
+.footer {
+  padding: 50px 0px;
+}
+.footer h2 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.footer p {
+  font-size: 15px;
+  font-weight: 500;
+}
+.footer p:nth-child(2) {
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: 20px 0px;
+    background: linear-gradient(45deg, #290a37, transparent);
+    padding-bottom: 90px;
+  }
+  .footer h2 {
+    font-size: 23px;
+    margin-bottom: 20px;
+  }
+  .footer p{
+    font-size: 13px;
+  }
+  .footer p:nth-child(2) {
+    margin-bottom: 20px;
+}
+}

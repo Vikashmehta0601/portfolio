@@ -1,0 +1,45 @@
+.PrimaryCard{
+    background-image: url('../../../../public/images/card_backgrounds.png');
+    background-repeat: no-repeat;
+    max-width: 490px;
+    padding: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-size: cover;
+    justify-content: space-between;
+}
+
+.PrimaryCard img{
+    max-width: 120px;
+}
+
+.PrimaryCard .content_card h6{
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #dddd;
+}
+.PrimaryCard .content_card p{
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 15px;
+    color: #a8a8a8dd;
+
+}
+
+@media screen and (max-width:767px) {
+    .PrimaryCard .content_card h6{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .PrimaryCard .content_card p{
+        line-height: 17px;
+    }
+    .PrimaryCard img {
+        max-width: 90px;
+    }
+}
