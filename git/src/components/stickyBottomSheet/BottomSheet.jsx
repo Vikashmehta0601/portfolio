@@ -5,27 +5,29 @@ import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
 import { saveAs } from "file-saver";
 
-const BottomSheetMobile = ({scrollToSection}) => {
-
-  const [isSheetOpen, setIsSheetOpen] = useState(false);
-  const [isResumeOpen, setIsResumeOpen] = useState(false);
-
+const BottomSheetMobile = ({
+  scrollToSection,
+  setIsResumeOpen,
+  isResumeOpen,
+  setIsSheetOpen,
+  isSheetOpen,
+}) => {
   const handleResume = () => {
     setIsResumeOpen(!isResumeOpen);
-    setIsSheetOpen(false)
+    setIsSheetOpen(false);
   };
   const handleAchievements = () => {
     setIsSheetOpen(!isSheetOpen);
-    setIsResumeOpen(false)
+    setIsResumeOpen(false);
   };
-  const closeSheet=()=>{
-    setIsSheetOpen(false)
-    setIsResumeOpen(false)
-  }
+  const closeSheet = () => {
+    setIsSheetOpen(false);
+    setIsResumeOpen(false);
+  };
 
   const handleDownload = () => {
-    const fileUrl = IMAGES.resumePDF; 
-    saveAs(fileUrl, "VikashResume"); 
+    const fileUrl = IMAGES.resumePDF;
+    saveAs(fileUrl, "VikashResume");
   };
 
   return (
@@ -41,7 +43,9 @@ const BottomSheetMobile = ({scrollToSection}) => {
       <div
         className={`bottom-sheet ${isSheetOpen || isResumeOpen ? "open" : ""}`}
       >
-        <button className="close_sheet" onClick={closeSheet}>x</button>
+        <button className="close_sheet" onClick={closeSheet}>
+          x
+        </button>
         <div className="sheet-content">
           {isSheetOpen && (
             <>
@@ -64,7 +68,14 @@ const BottomSheetMobile = ({scrollToSection}) => {
           )}
           {isResumeOpen && (
             <>
-              <h3 className="resume_download">Resume <img src={IMAGES.download} alt="download" onClick={handleDownload}/></h3>
+              <h3 className="resume_download">
+                Resume{" "}
+                <img
+                  src={IMAGES.download}
+                  alt="download"
+                  onClick={handleDownload}
+                />
+              </h3>
               <PhotoProvider>
                 <PhotoView src={IMAGES.resume1}>
                   <img
@@ -87,7 +98,7 @@ const BottomSheetMobile = ({scrollToSection}) => {
                       height: "200px",
                       objectFit: "cover",
                       cursor: "pointer",
-                      opacity:"0"
+                      opacity: "0",
                     }}
                   />
                 </PhotoView>
