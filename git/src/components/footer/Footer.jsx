@@ -8,7 +8,7 @@ const Footer = () => {
         <h2>Contact</h2>
         <p>
           I'm currently looking to join a cross-functional team that values
-          improving people's lives through accessible design. or have a project
+          improving people's lives through accessible development. or have a project
           in mind? Let's connect.
         </p>
         <p>vikashmehta0601@gmail.com</p>
