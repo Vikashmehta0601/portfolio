@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./home.css";
 import Intro from "../components/introsection/Intro";
 import Header from "../components/header/Header";
@@ -10,16 +10,30 @@ import BottomSheetMobile from "../components/stickyBottomSheet/BottomSheet";
 
 const Home = () => {
   const sectionRef = useRef(null);
+  const [isSheetOpen, setIsSheetOpen] = useState(false);
+  const [isResumeOpen, setIsResumeOpen] = useState(false);
+
+  const manageBehavior = ()=>{
+    sectionRef.current.scrollIntoView({ behavior: "smooth" })
+    setIsSheetOpen(false)
+    setIsResumeOpen(false)
+  }
 
   return (
     <div className="portfolio_page">
       {/* <Header /> */}
       <Intro />
       <WorkExperience />
-      <Skills/>
-      <Projects refAF={sectionRef}/>
-      <Footer/>
-      <BottomSheetMobile scrollToSection={() => sectionRef.current.scrollIntoView({ behavior: 'smooth' })}/>
+      <Skills />
+      <Projects refAF={sectionRef} />
+      <Footer />
+      <BottomSheetMobile
+        isSheetOpen={isSheetOpen}
+        setIsSheetOpen={setIsSheetOpen}
+        isResumeOpen={isResumeOpen}
+        setIsResumeOpen={setIsResumeOpen}
+        scrollToSection={manageBehavior}
+      />
     </div>
   );
 };
