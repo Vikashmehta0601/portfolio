@@ -60,6 +60,8 @@ const BottomSheetMobile = ({
                       height: "200px",
                       objectFit: "cover",
                       cursor: "pointer",
+                      padding:" 10px",
+                      boxShadow:"0px 0px 3px 3px #00000047",
                     }}
                   />
                 </PhotoView>
@@ -86,6 +88,8 @@ const BottomSheetMobile = ({
                       height: "200px",
                       objectFit: "cover",
                       cursor: "pointer",
+                      padding:" 10px",
+                      boxShadow:"0px 0px 3px 3px #00000047",
                     }}
                   />
                 </PhotoView>
@@ -99,6 +103,8 @@ const BottomSheetMobile = ({
                       objectFit: "cover",
                       cursor: "pointer",
                       opacity: "0",
+                      padding:" 10px",
+                      boxShadow:"0px 0px 3px 3px #00000047",
                     }}
                   />
                 </PhotoView>
