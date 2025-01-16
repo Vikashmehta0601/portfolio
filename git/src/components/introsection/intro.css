@@ -110,5 +110,8 @@
   .profile_details h6 {
     margin-top: 20px;
   }
+  .profile_details{
+  padding-top:30px;
+}
 }
 
