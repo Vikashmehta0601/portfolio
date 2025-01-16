@@ -4,7 +4,7 @@ import IMAGES from "../../contants";
 const Intro = () => {
   return (
     <div className="intro">
-      <div className="container vikash">
+      <div className="container vikash_">
         <div className="profile_img">
           <img src={IMAGES.profileIcon} alt="profileIcon" />
           <h1>
