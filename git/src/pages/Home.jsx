@@ -5,7 +5,7 @@ import Header from "../components/header/Header";
 import WorkExperience from "../components/workExperience/WorkExperience";
 import Skills from "../components/skills/Skills";
 import Projects from "../components/projects/Projects";
-import Footer from "../components/footer/footer.jsx";
+import Footer from "../components/footer/Footer";
 import BottomSheetMobile from "../components/stickyBottomSheet/BottomSheet";
 
 const Home = () => {
