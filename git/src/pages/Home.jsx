@@ -7,6 +7,7 @@ import Skills from "../components/skills/Skills";
 import Projects from "../components/projects/Projects";
 import Footer from "../components/footer/Footer";
 import BottomSheetMobile from "../components/stickyBottomSheet/BottomSheet";
+import WhatsappIcon from "../components/whatsappIcon/WhatsappIcon";
 
 const Home = () => {
   const sectionRef = useRef(null);
@@ -34,6 +35,7 @@ const Home = () => {
         setIsResumeOpen={setIsResumeOpen}
         scrollToSection={manageBehavior}
       />
+      <WhatsappIcon/>
     </div>
   );
 };
