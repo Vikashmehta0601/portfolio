@@ -32,7 +32,7 @@ const Home = () => {
   const steps = [
     {
       target: ".step1",
-      content: "Welcome to the application! This is the introduction section where we explain what this app is about. ",
+      content: "Welcome to the application! This is the introduction section where we explain what this app is about.",
     },
     {
       target: ".step2",
