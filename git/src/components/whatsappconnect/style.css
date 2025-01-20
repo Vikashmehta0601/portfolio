@@ -1,0 +1,33 @@
+.whatsapp_section{
+    position: fixed;
+    right: 50px;
+    bottom: 150px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #5a4677, transparent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 3px 2px #2c1551, inset 0px 0px 8px 3px #2c1551;
+    cursor: pointer;
+}
+
+.whatsapp_section svg{
+    font-size: 40px;
+}
+
+@media screen and (max-width:767px) {
+    .whatsapp_section{
+        right: 20px;
+        bottom: 80px;
+        height: 40px;
+        width: 40px;
+        background: linear-gradient(45deg, #341165, #1d0dbd);
+        box-shadow: 0px 0px 3px 1px #b400ff91, inset 0px 0px 6px 4px #2c1551;
+    }
+    .whatsapp_section svg{
+        font-size: 20px;
+    }
+
+}
