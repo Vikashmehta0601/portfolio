@@ -1,5 +1,5 @@
 import React from "react";
-// import { FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 import "./style.css"
 
 const WhatsappINT = () => {
@@ -9,8 +9,8 @@ const WhatsappINT = () => {
     <div className="whatsapp_section" onClick={() =>
       window.open("https://wa.me/6376415198", "_blank")
     }>
-      WA
-      {/* <FaWhatsapp /> */}
+      {/* WA */}
+      <FaWhatsapp />
     </div>
   );
 };
