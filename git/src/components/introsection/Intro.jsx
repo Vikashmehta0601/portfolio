@@ -1,17 +1,17 @@
 import React from "react";
 import "./intro.css";
 import IMAGES from "../../contants";
-const Intro = () => {
+const Intro = ({joyClass}) => {
   return (
-    <div className="intro">
-      <div className="container vikash_">
+    <div className={`intro `}>
+      <div className="container">
         <div className="profile_img">
           <img src={IMAGES.profileIcon} alt="profileIcon" />
           <h1>
             Hello! I Am <span className="primary_color_text">Vikash Mehta</span>
           </h1>
         </div>
-        <div className="profile_details">
+        <div className={`profile_details ${joyClass}`}>
           <h6>A Developer who</h6>
           <h2>
             Builds a website by its{" "}
