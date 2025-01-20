@@ -4,11 +4,11 @@ import "./style.css"
 
 const WhatsappINT = () => {
 
-  // onClick={() =>
-  //   window.open("https://wa.me/6376415198", "_blank")
-  // }
+  
   return (
-    <div className="whatsapp_section">
+    <div className="whatsapp_section" onClick={() =>
+      window.open("https://wa.me/6376415198", "_blank")
+    }>
       WA
       {/* <FaWhatsapp /> */}
     </div>
