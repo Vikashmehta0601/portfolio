@@ -1,7 +1,10 @@
-.whatsapp_section{
+.floating_icons{
     position: fixed;
     right: 50px;
     bottom: 150px;
+}
+
+.whatsapp_section{
     height: 60px;
     width: 60px;
     border-radius: 50%;
@@ -17,10 +20,20 @@
     font-size: 40px;
 }
 
+.whatsapp_section.calls_section{
+    margin-top: 10px;
+}
+
+.whatsapp_section.calls_section svg{
+    font-size: 30px;
+}
+
 @media screen and (max-width:767px) {
-    .whatsapp_section{
+    .floating_icons{
         right: 20px;
         bottom: 80px;
+    }
+    .whatsapp_section{
         height: 40px;
         width: 40px;
         background: linear-gradient(45deg, #341165, #1d0dbd);
@@ -28,6 +41,9 @@
     }
     .whatsapp_section svg{
         font-size: 20px;
+    }
+    .whatsapp_section.calls_section svg{
+        font-size: 15px;
     }
 
 }
