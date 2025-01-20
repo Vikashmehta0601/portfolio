@@ -4,10 +4,10 @@ import HeadingPrimary from "../common/headingPrimary/HeadingPrimary";
 import PrimaryCard from "../common/primaryCards/PrimaryCard";
 import IMAGES from "../../contants";
 
-const WorkExperience = () => {
+const WorkExperience = ({joyClass}) => {
   return (
     <div className="container">
-      <div className="WorkExperience ">
+      <div className={`WorkExperience ${joyClass}`}>
         <img src={IMAGES.gradiunt1} alt="grandiunt" />
         <HeadingPrimary title={"Work Experience"} />
         <div className="cardsFor_experience">
