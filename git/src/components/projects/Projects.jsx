@@ -5,10 +5,10 @@ import ProjectRightCard from "../common/projectCards/ProjectRightCard";
 import IMAGES from "../../contants";
 import ProjectsData from "../../content/Projects";
 
-const Projects = ({refAF}) => {
+const Projects = ({refAF, joyClass}) => {
   return (
     <div className="container" ref={refAF}>
-      <div className="projectCards">
+      <div className={`projectCards ${joyClass}`}>
         <img src={IMAGES.gradiuntforProject} alt="" />
         {ProjectsData?.map((item) => (
           <div className="card_parents" key={item?.id}>
