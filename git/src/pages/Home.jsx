@@ -1,13 +1,12 @@
 import React, { useRef, useState } from "react";
 import "./home.css";
 import Intro from "../components/introsection/Intro";
-import Header from "../components/header/Header";
 import WorkExperience from "../components/workExperience/WorkExperience";
 import Skills from "../components/skills/Skills";
 import Projects from "../components/projects/Projects";
 import Footer from "../components/footer/Footer";
 import BottomSheetMobile from "../components/stickyBottomSheet/BottomSheet";
-// import WhatsappIcon from "../components/whatsappIcon/WhatsappIcon";
+import WhatsappINT from "../components/whatsappconnect/WhatsappINT";
 
 const Home = () => {
   const sectionRef = useRef(null);
@@ -35,7 +34,7 @@ const Home = () => {
         setIsResumeOpen={setIsResumeOpen}
         scrollToSection={manageBehavior}
       />
-{/*       <WhatsappIcon/> */}
+      <WhatsappINT/>
     </div>
   );
 };
