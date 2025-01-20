@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import "./style.css";
 import { IoCall } from "react-icons/io5";
-import CustomBootstrapModal from "../modal/CustomBootstrapModal";
+
 
 const WhatsappINT = () => {
   const [show, setShow] = useState(false);
