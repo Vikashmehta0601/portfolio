@@ -12,7 +12,7 @@ const ProjectsData = [
     id: 2,
     name: "TRP World",
     summary: "Simplified the hotel booking process for users. Increased engagement and conversion rates with a responsive and visually appealing design. Provided a scalable and maintainable solution for hotel operators to manage bookings efficiently.",
-    link: "https://trpworld.com/login",
+    link: "https://trp1.technosoftwares.com/",
     projectImage:IMAGES.trpImage,
   },
 ];
